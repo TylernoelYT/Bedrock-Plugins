@@ -1,6 +1,15 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/TylernoelYT/LobbyTeleportPlugin
-build-by-default: true
 branches:
-- main
-projects: []
-...
+  - main 
+
+projects:
+  LobbyTeleport:
+    path: . 
+    libs:
+      - src 
+    php-version: ^8.0 
+    pmmp:
+      versions:
+        - 4.0.0 
+    build:
+      lint: true 
+      model: default 
